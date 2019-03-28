@@ -1,3 +1,3 @@
-funtion hellof() {
-  alert("Xin chao");
+function hellof() {
+	alert("Xin chao");
 }
