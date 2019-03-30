@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích hình tròn</title>
+</head>
+<body>
+    <label for="bk">Nhập bán kính: <input type="text" value="" name="bk" id="bk"></label>
+    <input type="button" value="Tính" onclick="hinhtron()">
+    <script>
+      function hinhtron() {
+        var r = document.getElementById("bk");
+        if (r.value=="") {
+          alert ("Bạn chưa nhập giá trị !!");
+        }
+        else {
+          dt = parseFloat(parseFloat(r.value)*3.14*parseFloat(r.value));
+         alert("Diện tích hình tròn: " + dt);
+        }
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi hình tròn</title>
+</head>
+<body>
+    <label for="bk">Nhập bán kính: <input type="text" value="" name="bk" id="bk"></label>
+    <input type="button" value="Tính" onclick="hinhtron1()">
+    <script>
+      function hinhtron1() {
+        var r = document.getElementById("bk");
+        if (r.value=="") {
+          alert ("Bạn chưa nhập giá trị !!");
+        }
+        else {
+          cv = parseFloat(parseFloat(r.value)*3.14*2);
+          alert("Chu vi hình tròn: " + cv);
+        }
+      }
+    </script>
+</body>
+</html>
