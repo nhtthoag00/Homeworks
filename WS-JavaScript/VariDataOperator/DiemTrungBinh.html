@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình vật lí, hóa, sinh học</title>
+</head>
+<body>
+    <label for="diem1">Nhập điểm lí: <input type="text" value="" name="diem1" id="diem1"><br><br></label>
+    <label for="diem2">Nhập điểm hóa: <input type="text" value="" name="diem2" id="diem2"><br><br></label>
+    <label for="diem3">Nhập điểm sinh: <input type="text" value="" name="diem3" id="diem3"><br><br></label>
+
+    <input type="button" value="submit" onclick="tinhdiem()">
+    <script>
+      function tinhdiem() {
+        var li = document.getElementById("diem1");
+        var hoa = document.getElementById("diem2");
+        var sinh = document.getElementById("diem3");
+        if (li.value == "" && hoa.value == "" && sinh.value == "") {
+          alert("Bạn chưa nhập giá trị !!");
+        } else if (li.value == "") {
+          alert("Bạn chưa nhập điểm lí !!");
+        } else if (hoa.value == "") {
+          alert("Bạn chưa nhập điểm hóa !!");
+        } else if (sinh.value == "") {
+          alert("Bạn chưa nhập điểm sinh !!");
+        } else {
+          tb = parseInt(parseInt(li.value) + parseFloat(hoa.value) + parseFloat(sinh.value)) / 3;
+          alert("Điểm trung bình: " + tb);
+        }
+      }
+
+    </script>
+</body>
+</html>

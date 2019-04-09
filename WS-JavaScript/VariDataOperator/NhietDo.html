@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển độ C sang độ F</title>
+</head>
+<body>
+    <label for="doC">Nhập độ C: <input type="text" value="" name="doC" id="doC"><br></label>
+    <input type="button" value="Đổi" onclick="chuyendoi()">
+    <script>
+      function chuyendoi() {
+        var c = document.getElementById("doC");
+        if (c.value=="") {
+          alert("Bạn chưa nhập giá trị C !!");
+        }
+        else {
+          doF = parseInt(parseFloat(c.value) / 5 * 9 + 32);
+          alert("Độ F: " + doF);
+        }
+      }
+    </script>
+</body>
+</html>

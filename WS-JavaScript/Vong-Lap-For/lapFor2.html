@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng lặp For 2</title>
+</head>
+<body>
+    <label for="text1">Nhập n: </label>
+    <input type="number" id="text1">
+    <button type="button" onclick="sum();">Sum !!</button>
+    <div id="text2"></div>
+    <script>
+        function sum() {
+            var total = 0;
+            var n = document.getElementById("text1").value;
+            for (var i = 0; i <= n; i++) {
+                total = total + i;
+            }
+            document.getElementById("text2").innerHTML = "Tổng: " + total;
+        }
+    </script>
+</body>
+</html>
